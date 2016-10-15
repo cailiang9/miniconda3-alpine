@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:latest
 
-MAINTAINER Kodai Kato
+MAINTAINER K.Kato
 
 ENV PATH=/opt/conda/bin:$PATH \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
