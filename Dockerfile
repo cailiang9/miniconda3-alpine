@@ -3,6 +3,7 @@ FROM frolvlad/alpine-glibc:latest
 MAINTAINER K.Kato
 
 ENV PATH=/opt/conda/bin:$PATH \
+    CONDA_VER=4.4.10 \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 
 RUN apk add --no-cache --virtual=build-deps --update-cache \
@@ -14,6 +15,3 @@ RUN apk add --no-cache --virtual=build-deps --update-cache \
     && apk del build-deps 
     
 CMD ["/bin/sh"]
-
-
-
