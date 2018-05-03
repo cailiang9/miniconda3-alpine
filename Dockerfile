@@ -3,7 +3,7 @@ FROM frolvlad/alpine-glibc:latest
 MAINTAINER Cailiang
 
 ENV PATH=/conda/bin:$PATH \
-    CONDA_VER=4.4.10 \
+    CONDA_VER=4.5.1 \
     MINICONDA=Miniconda3-latest-Linux-x86_64.sh
 
 RUN apk add --no-cache --update-cache wget bzip2 bash openssh \
